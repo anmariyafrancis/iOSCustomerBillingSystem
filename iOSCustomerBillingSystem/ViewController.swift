@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController
 {
 
+    @IBOutlet weak var txtUsername: UITextField!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
