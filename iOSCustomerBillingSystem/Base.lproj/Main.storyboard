@@ -47,7 +47,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Login" id="exs-xd-FFp">
                             <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="9Mo-iG-RAt" kind="show" id="yc6-1m-j1b"/>
+                                <segue destination="gNb-Sr-ExY" kind="show" id="FTT-jO-ATU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -57,38 +57,40 @@
             <point key="canvasLocation" x="912" y="139"/>
         </scene>
         <!--Customers-->
-        <scene sceneID="l6h-aC-XUV">
+        <scene sceneID="V4t-xc-tr1">
             <objects>
-                <viewController id="9Mo-iG-RAt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Js5-Uz-V4a">
+                <tableViewController id="gNb-Sr-ExY" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CFQ-eO-Rbd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="U1q-yl-4eZ">
-                                <rect key="frame" x="0.0" y="117" width="414" height="44"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pjj-Un-pGd">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U1q-yl-4eZ" id="iNi-h8-lkz">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pjj-Un-pGd" id="Kvj-EV-IEj">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ZRC-4L-4Mu"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Customers" id="nKb-82-TNK">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="4Xn-mE-2dm">
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gNb-Sr-ExY" id="KW2-kD-U1u"/>
+                            <outlet property="delegate" destination="gNb-Sr-ExY" id="hNu-aS-xfl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Customers" id="v8Y-36-lfD">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="nAA-KY-JgC">
                             <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="New Customer" id="hFj-yh-j4b">
-                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
+                        <barButtonItem key="rightBarButtonItem" title="New Customers" id="JQj-VF-vKz">
                             <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rIx-Ex-ZEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipa-V8-WYt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755.072463768116" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1629" y="144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7RW-KE-hTe">
