@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B105FAC2414622C00369F7C /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B105FAB2414622C00369F7C /* CustomerListTableViewController.swift */; };
+		9B105FAE2414635200369F7C /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B105FAD2414635200369F7C /* UserInfo.plist */; };
 		9BBD05E92411B419001F06D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD05E82411B419001F06D6 /* AppDelegate.swift */; };
 		9BBD05EB2411B419001F06D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD05EA2411B419001F06D6 /* SceneDelegate.swift */; };
 		9BBD05ED2411B419001F06D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD05EC2411B419001F06D6 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		9B105FAB2414622C00369F7C /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
+		9B105FAD2414635200369F7C /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		9BBD05E52411B419001F06D6 /* iOSCustomerBillingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCustomerBillingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBD05E82411B419001F06D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BBD05EA2411B419001F06D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				9BBD05F32411B41A001F06D6 /* LaunchScreen.storyboard */,
 				9BBD05EE2411B419001F06D6 /* Main.storyboard */,
 				9B105FAB2414622C00369F7C /* CustomerListTableViewController.swift */,
+				9B105FAD2414635200369F7C /* UserInfo.plist */,
 			);
 			path = iOSCustomerBillingSystem;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				9BBD05F52411B41A001F06D6 /* LaunchScreen.storyboard in Resources */,
 				9BBD05F22411B41A001F06D6 /* Assets.xcassets in Resources */,
 				9BBD05F02411B419001F06D6 /* Main.storyboard in Resources */,
+				9B105FAE2414635200369F7C /* UserInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,18 +6,6 @@
 	<array>
 		<dict>
 			<key>email</key>
-			<string>anmariya@gmail.com</string>
-			<key>password</key>
-			<string>an@123</string>
-		</dict>
-		<dict>
-			<key>email</key>
-			<string>aldin@gmail.com</string>
-			<key>password</key>
-			<string>al@123</string>
-		</dict>
-		<dict>
-			<key>email</key>
 			<string>rose@gmail.com</string>
 			<key>password</key>
 			<string>ro@123</string>
@@ -33,6 +21,18 @@
 			<string>baby@gmail.com</string>
 			<key>password</key>
 			<string>ba@123</string>
+		</dict>
+		<dict>
+			<key>email</key>
+			<string>aldin@gmail.com</string>
+			<key>password</key>
+			<string>al@123</string>
+		</dict>
+		<dict>
+			<key>email</key>
+			<string>anmariya@gmail.com</string>
+			<key>password</key>
+			<string>an@123</string>
 		</dict>
 	</array>
 </dict>
