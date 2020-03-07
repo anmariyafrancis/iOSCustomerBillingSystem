@@ -38,7 +38,7 @@ class ViewController: UIViewController
                         }
                         if flag==true
                         {
-                            
+                            self.navigationController?.popViewController(animated: true)
                         }
                         else
                         {
@@ -51,4 +51,5 @@ class ViewController: UIViewController
             }
     }
 }
+
 

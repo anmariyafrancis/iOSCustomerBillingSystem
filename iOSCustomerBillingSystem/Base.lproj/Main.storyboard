@@ -49,7 +49,6 @@
                             <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="btnLogin:" destination="BYZ-38-t0r" id="ddh-L6-D1K"/>
-                                <segue destination="gNb-Sr-ExY" kind="show" id="axA-RS-6si"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -158,7 +157,7 @@
             <objects>
                 <viewController id="7L6-x7-A5b" customClass="AddNewCustomerViewController_AddNewCustomerViewController" customModule="iOSCustomerBillingSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Wk-Tn-RVk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="a8J-xo-ck3"/>

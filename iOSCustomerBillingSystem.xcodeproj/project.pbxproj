@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B105FAC2414622C00369F7C /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B105FAB2414622C00369F7C /* CustomerListTableViewController.swift */; };
 		9BBD05E92411B419001F06D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD05E82411B419001F06D6 /* AppDelegate.swift */; };
 		9BBD05EB2411B419001F06D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD05EA2411B419001F06D6 /* SceneDelegate.swift */; };
 		9BBD05ED2411B419001F06D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD05EC2411B419001F06D6 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B105FAB2414622C00369F7C /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		9BBD05E52411B419001F06D6 /* iOSCustomerBillingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCustomerBillingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBD05E82411B419001F06D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BBD05EA2411B419001F06D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,15 +62,16 @@
 		9BBD05E72411B419001F06D6 /* iOSCustomerBillingSystem */ = {
 			isa = PBXGroup;
 			children = (
+				9BBD05F62411B41A001F06D6 /* Info.plist */,
+				9BDEDD2024131CE100E9BFBA /* AddNewCustomerViewController AddNewCustomerViewController.swift */,
 				9BBD05E82411B419001F06D6 /* AppDelegate.swift */,
 				9BBD05EA2411B419001F06D6 /* SceneDelegate.swift */,
+				9BDEDD1E24131B6500E9BFBA /* ShowBillDetailsViewController.swift */,
 				9BBD05EC2411B419001F06D6 /* ViewController.swift */,
-				9BBD05EE2411B419001F06D6 /* Main.storyboard */,
 				9BBD05F12411B41A001F06D6 /* Assets.xcassets */,
 				9BBD05F32411B41A001F06D6 /* LaunchScreen.storyboard */,
-				9BBD05F62411B41A001F06D6 /* Info.plist */,
-				9BDEDD1E24131B6500E9BFBA /* ShowBillDetailsViewController.swift */,
-				9BDEDD2024131CE100E9BFBA /* AddNewCustomerViewController AddNewCustomerViewController.swift */,
+				9BBD05EE2411B419001F06D6 /* Main.storyboard */,
+				9B105FAB2414622C00369F7C /* CustomerListTableViewController.swift */,
 			);
 			path = iOSCustomerBillingSystem;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BBD05ED2411B419001F06D6 /* ViewController.swift in Sources */,
+				9B105FAC2414622C00369F7C /* CustomerListTableViewController.swift in Sources */,
 				9BBD05E92411B419001F06D6 /* AppDelegate.swift in Sources */,
 				9BBD05EB2411B419001F06D6 /* SceneDelegate.swift in Sources */,
 				9BDEDD1F24131B6500E9BFBA /* ShowBillDetailsViewController.swift in Sources */,

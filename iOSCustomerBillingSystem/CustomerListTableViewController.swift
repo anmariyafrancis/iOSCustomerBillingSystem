@@ -2,29 +2,31 @@
 //  CustomerListTableViewController.swift
 //  iOSCustomerBillingSystem
 //
-//  Created by MacStudent on 2020-03-06.
+//  Created by MacStudent on 2020-03-07.
 //  Copyright © 2020 MacStudent. All rights reserved.
 //
 
 import UIKit
 
-class CustomerListTableViewController: UITableViewController
-{
+class CustomerListTableViewController: UITableViewController {
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
+
+        
     }
-    override func numberOfSections(in tableView: UITableView) -> Int
-    {
+
+    // MARK: - Table view data source
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
         return 0
     }
-    @IBAction func btnLogout(_ sender: UIBarButtonItem)
-    {
-        self.navigationController?.popViewController(animated: true)
-    }
+    
 }
