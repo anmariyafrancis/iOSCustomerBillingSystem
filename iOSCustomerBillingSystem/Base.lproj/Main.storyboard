@@ -120,6 +120,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New Customers" id="JQj-VF-vKz">
                             <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="7L6-x7-A5b" kind="show" id="NPN-fN-vxI"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
@@ -137,15 +140,27 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OD9-ZF-mAW"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qe3-KU-YYL">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="pZR-Dl-JPq">
-                            <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="qe3-KU-YYL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g4-zv-A5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2378" y="139"/>
+        </scene>
+        <!--Add New Customer-->
+        <scene sceneID="Oll-8Z-M65">
+            <objects>
+                <viewController id="7L6-x7-A5b" customClass="AddNewCustomerViewController_AddNewCustomerViewController" customModule="iOSCustomerBillingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Wk-Tn-RVk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="a8J-xo-ck3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Customer" id="k4R-52-ou3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4d-yX-Wzj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3116" y="144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7RW-KE-hTe">
