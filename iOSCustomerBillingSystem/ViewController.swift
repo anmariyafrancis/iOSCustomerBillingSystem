@@ -20,8 +20,8 @@ class ViewController: UIViewController
     }
     @IBAction func btnLogin(_ sender: UIBarButtonItem)
     {
-        var email=self.txtEmail.text
-        var password=self.txtPassword.text
+        var email:String=txtEmail.text!
+        var password:String=txtPassword.text!
         if let bundlepath = Bundle.main.path(forResource: "UserInfo", ofType: "plist")
         {
                 if let dictionary = NSMutableDictionary(contentsOfFile: bundlepath)
