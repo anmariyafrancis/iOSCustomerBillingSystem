@@ -14,6 +14,8 @@
 		9BBD05F22411B41A001F06D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD05F12411B41A001F06D6 /* Assets.xcassets */; };
 		9BBD05F52411B41A001F06D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD05F32411B41A001F06D6 /* LaunchScreen.storyboard */; };
 		9BBD05FE2411B939001F06D6 /* first.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BBD05FD2411B939001F06D6 /* first.jpg */; };
+		9BDEDD1F24131B6500E9BFBA /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDEDD1E24131B6500E9BFBA /* ShowBillDetailsViewController.swift */; };
+		9BDEDD2124131CE100E9BFBA /* AddNewCustomerViewController AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDEDD2024131CE100E9BFBA /* AddNewCustomerViewController AddNewCustomerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9BBD05F42411B41A001F06D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BBD05F62411B41A001F06D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BBD05FD2411B939001F06D6 /* first.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = first.jpg; path = ../../../first.jpg; sourceTree = "<group>"; };
+		9BDEDD1E24131B6500E9BFBA /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
+		9BDEDD2024131CE100E9BFBA /* AddNewCustomerViewController AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddNewCustomerViewController AddNewCustomerViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				9BBD05F12411B41A001F06D6 /* Assets.xcassets */,
 				9BBD05F32411B41A001F06D6 /* LaunchScreen.storyboard */,
 				9BBD05F62411B41A001F06D6 /* Info.plist */,
+				9BDEDD1E24131B6500E9BFBA /* ShowBillDetailsViewController.swift */,
+				9BDEDD2024131CE100E9BFBA /* AddNewCustomerViewController AddNewCustomerViewController.swift */,
 			);
 			path = iOSCustomerBillingSystem;
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 				9BBD05ED2411B419001F06D6 /* ViewController.swift in Sources */,
 				9BBD05E92411B419001F06D6 /* AppDelegate.swift in Sources */,
 				9BBD05EB2411B419001F06D6 /* SceneDelegate.swift in Sources */,
+				9BDEDD1F24131B6500E9BFBA /* ShowBillDetailsViewController.swift in Sources */,
+				9BDEDD2124131CE100E9BFBA /* AddNewCustomerViewController AddNewCustomerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
