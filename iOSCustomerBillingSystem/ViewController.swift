@@ -20,13 +20,10 @@ class ViewController: UIViewController
     }
     @IBAction func btnLogin(_ sender: UIBarButtonItem)
     {
-        var email = txtEmail.text
-        var password = txtPassword.text
-        func readPlistData()
+        var email=self.txtEmail.text
+        var password=self.txtPassword.text
+        if let bundlepath = Bundle.main.path(forResource: "UserInfo", ofType: "plist")
         {
-            if let bundlepath = Bundle.main.path(forResource: "UserInfo", ofType: "plist")
-            {
-                
                 if let dictionary = NSMutableDictionary(contentsOfFile: bundlepath)
                 {
                     if let users = dictionary["users"] as? [[String:String]]
@@ -45,16 +42,13 @@ class ViewController: UIViewController
                         }
                         else
                         {
-                            let alertController = UIAlertController(title: "Error", message:"Invalid email id or password", preferredStyle: .actionSheet)
-                            alertController.addAction(UIAlertAction(title: "Login Again", style: .default))
-                            self.present(alertController, animated: true, completion: nil)
-                           
+                                let alertController = UIAlertController(title: "Error", message:"Invalid email id or password", preferredStyle: .actionSheet)
+                                alertController.addAction(UIAlertAction(title: "Login Again", style: .default))
+                                self.present(alertController, animated: true, completion: nil)
                         }
                     }
                 }
             }
-            
-        }
-     }
+    }
 }
 
