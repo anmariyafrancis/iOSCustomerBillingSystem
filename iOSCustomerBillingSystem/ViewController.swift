@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController
 {
-
-   
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
@@ -20,7 +18,43 @@ class ViewController: UIViewController
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func btnLogin(_ sender: UIBarButtonItem) {
-    }
+    @IBAction func btnLogin(_ sender: UIBarButtonItem)
+    {
+        var email = txtEmail.text
+        var password = txtPassword.text
+        func readPlistData()
+        {
+            if let bundlepath = Bundle.main.path(forResource: "UserInfo", ofType: "plist")
+            {
+                
+                if let dictionary = NSMutableDictionary(contentsOfFile: bundlepath)
+                {
+                    if let users = dictionary["users"] as? [[String:String]]
+                    {
+                        var flag = false
+                        for userList in users
+                        {
+                            if userList["email"] == email && userList["password"] == password
+                            {
+                                flag=true
+                            }
+                        }
+                        if flag==true
+                        {
+                            
+                        }
+                        else
+                        {
+                            let alertController = UIAlertController(title: "Error", message:"Invalid email id or password", preferredStyle: .actionSheet)
+                            alertController.addAction(UIAlertAction(title: "Login Again", style: .default))
+                            self.present(alertController, animated: true, completion: nil)
+                           
+                        }
+                    }
+                }
+            }
+            
+        }
+     }
 }
 
