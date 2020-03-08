@@ -49,6 +49,18 @@ class ViewController: UIViewController
                             if userList["email"] == email && userList["password"] == password
                             {
                                 flag=true
+                                let userDefault = UserDefaults.standard
+                                if swRemember.isOn
+                                {
+                                    
+                                    userDefault.setValue(txtEmail.text, forKey: "emailId")
+                                   
+                                }
+                                else
+                                {
+                                    userDefault.removeObject(forKey: "userEmail")
+                                    userDefault.removeObject(forKey: "userPassword")
+                                }
                             }
                         }
                         if flag==false
