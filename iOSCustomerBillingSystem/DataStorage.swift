@@ -32,9 +32,9 @@ class DataStorage
     {
         customersList.updateValue(Customer(customerId: "1", firstName: "Anmariya", lastName: "Francis", email: "anmariya@gmail.com"), forKey: "1")
         customersList.updateValue(Customer(customerId: "2", firstName: "Aldin", lastName: "Jose", email: "aldin@gmail.com"), forKey: "2")
-        customersList.updateValue(Customer(customerID: "3", firstName: "Rose", lastName: "Jis", emailID: "rose@gmail.com"), forKey: "3")
-        customersList.updateValue(Customer(customerID: "4", firstName: "Jis", lastName: "Jose", emailID: "jis@gmail.com"), forKey: "4")
-        customersList.updateValue(Customer(customerID: "5", firstName: "Baby", lastName: "Francis", emailID: "baby@gmail.com"), forKey: "5")
+        customersList.updateValue(Customer(customerId: "3", firstName: "Rose", lastName: "Jis", email: "rose@gmail.com"), forKey: "3")
+        customersList.updateValue(Customer(customerId: "4", firstName: "Jis", lastName: "Jose", email: "jis@gmail.com"), forKey: "4")
+        customersList.updateValue(Customer(customerId: "5", firstName: "Baby", lastName: "Francis", email: "baby@gmail.com"), forKey: "5")
         
     }
     
