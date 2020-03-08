@@ -49,7 +49,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvC-Sb-qew"/>
-                                    <segue destination="b6j-e2-tEV" kind="show" id="8pF-Hk-T3r"/>
+                                    <segue destination="Gru-rE-lXE" kind="show" id="cTN-Zj-Vr9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,49 +69,50 @@
             </objects>
             <point key="canvasLocation" x="911.59420289855075" y="138.61607142857142"/>
         </scene>
-        <!--Customers-->
-        <scene sceneID="yNH-4h-P9S">
+        <!--Customer-->
+        <scene sceneID="keA-a4-o1A">
             <objects>
-                <tableViewController id="b6j-e2-tEV" customClass="CustomerListTableViewController" customModule="iOSCustomerBillingSystem" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="a9b-Hy-JMp">
+                <viewController id="Gru-rE-lXE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yF6-cn-3cA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aJ4-CK-b02">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XgY-Y4-NVc">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XgY-Y4-NVc" id="ONw-0e-zOs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customerList" id="Jqm-eZ-kwN">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jqm-eZ-kwN" id="1oT-KM-6kq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="b6j-e2-tEV" id="sKU-1T-vXr"/>
-                            <outlet property="delegate" destination="b6j-e2-tEV" id="Ag3-Cw-OzL"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Customers" id="s0C-Pa-mjW">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="7tb-Jz-9d5">
+                        <viewLayoutGuide key="safeArea" id="8FY-je-ui3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Customer" id="yxg-3F-iSo">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="a0l-mo-JO0">
                             <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="btnLogout:" destination="b6j-e2-tEV" id="saw-sv-N7v"/>
+                                <action selector="btnLogout:" destination="aBf-WG-LcK" id="yjG-2u-mzw"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="New Customer" id="pyL-MV-sDA">
+                        <barButtonItem key="rightBarButtonItem" title="New Customer" id="wop-QF-VSO">
                             <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="tblCustomers" destination="a9b-Hy-JMp" id="0aD-t3-o6E"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jKn-7S-D1a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iX5-y3-LVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="aBf-WG-LcK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1632" y="142"/>
+            <point key="canvasLocation" x="1637.68115942029" y="138.61607142857142"/>
         </scene>
         <!--Bill Details-->
         <scene sceneID="Q8d-bf-kL1">
