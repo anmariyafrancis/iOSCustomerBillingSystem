@@ -11,32 +11,64 @@ import Foundation
 class DataStorage
 {
     
-    private static let instance = DataStorage()
-    private lazy var customersList: [String: Customer] = [:]
-
-    private init(){}
-
-    static func getInstance() -> DataStorage
-    {
-        return instance
-    }
-    
-    func addCustomer(customer: Customer)
-    {
-        self.customersList.updateValue(customer, forKey: customer.customerId)
-    }
-    func getAllCustomers() -> [Customer]{
-        return Array(customersList.values)
-    }
-    func loadData()
-    {
-        customersList.updateValue(Customer(customerId: "1", firstName: "Anmariya", lastName: "Francis", email: "anmariya@gmail.com"), forKey: "1")
-        customersList.updateValue(Customer(customerId: "2", firstName: "Aldin", lastName: "Jose", email: "aldin@gmail.com"), forKey: "2")
-        customersList.updateValue(Customer(customerId: "3", firstName: "Rose", lastName: "Jis", email: "rose@gmail.com"), forKey: "3")
-        customersList.updateValue(Customer(customerId: "4", firstName: "Jis", lastName: "Jose", email: "jis@gmail.com"), forKey: "4")
-        customersList.updateValue(Customer(customerId: "5", firstName: "Baby", lastName: "Francis", email: "baby@gmail.com"), forKey: "5")
-        
-    }
-    
+private var customerDictionary = [Int:Customer]()
+ 
+private static var obj = DataStorage()
+ 
+ 
+private  init () {   }
+ 
+internal static func getInstance() -> DataStorage
+{
+  return obj
 }
-
+ 
+func addNewCustomer(First_Name : String, Last_Name : String, email : String)
+{
+  let c = customerDictionary.count + 1
+   
+  let temp = Customer(customerId: c, firstName: First_Name, lastName: Last_Name, email: email)
+  self.AddCustomer(customer: temp)
+}
+ 
+func returnCustObject(custID : Int) -> Customer?
+{
+  for (k,v) in customerDictionary
+  {
+    if custID == k
+    {
+      return v
+    }
+  }
+  return nil
+   
+}
+ 
+func returnCount() -> Int
+{
+  return customerDictionary.count
+}
+ 
+func createCust()
+{
+   
+let c1 = Customer(customerId: 1, firstName: "anu", lastName: "anu", email: "aas@gmail.com ")
+  AddCustomer(customer: c1)
+   
+  
+}
+ 
+ 
+ 
+func AddCustomer(customer: Customer)
+{
+    customerDictionary.updateValue(customer, forKey: customer.customerId)
+}
+func printdata()
+{
+  for i in customerDictionary.values
+  {
+    print(i.fullName)
+  }
+}
+}

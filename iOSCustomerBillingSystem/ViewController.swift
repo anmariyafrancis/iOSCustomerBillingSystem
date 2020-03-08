@@ -74,6 +74,11 @@ class ViewController: UIViewController
                 }
             }
     }
+    @IBAction func unWindLogoutFromAnyScreen(storyboardSegue: UIStoryboardSegue)
+    {
+        print("Logout")
+        //let s = storyboardSegue.source as! CustomerListTableViewController
+    }
 }
 
 

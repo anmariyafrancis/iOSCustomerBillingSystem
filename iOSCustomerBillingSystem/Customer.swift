@@ -10,7 +10,7 @@ import Foundation
 
 class Customer
 {
-    var customerId:String
+    var customerId:Int
     var firstName:String
     var lastName:String
     var email:String
@@ -19,7 +19,7 @@ class Customer
         return "\(firstName) \(lastName)"
     }
     
-    init(customerId:String,firstName:String,lastName:String,email:String)
+    init(customerId:Int,firstName:String,lastName:String,email:String)
     {
         self.customerId=customerId
         self.firstName=firstName
