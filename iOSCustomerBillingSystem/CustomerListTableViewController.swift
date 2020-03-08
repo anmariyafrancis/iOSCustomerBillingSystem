@@ -44,7 +44,7 @@ class CustomerListTableViewController :UIViewController,UITableViewDelegate,UITa
       @objc func add()
       {
        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let thirdVC = sb.instantiateViewController(identifier: "thirdVC") as! AddNewCustomerViewController_AddNewCustomerViewController
+        let thirdVC = sb.instantiateViewController(identifier: "thirdVC") as! AddNewCustomerViewController
         
          self.navigationController?.pushViewController(thirdVC, animated: true)
       }

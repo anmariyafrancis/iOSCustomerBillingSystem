@@ -73,7 +73,7 @@
         <!--Customer-->
         <scene sceneID="keA-a4-o1A">
             <objects>
-                <viewController id="Gru-rE-lXE" customClass="CustomerListTableViewController" customModule="iOSCustomerBillingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondVC" id="Gru-rE-lXE" customClass="CustomerListTableViewController" customModule="iOSCustomerBillingSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yF6-cn-3cA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,22 +144,6 @@
             </objects>
             <point key="canvasLocation" x="2422" y="144"/>
         </scene>
-        <!--Add New Customer-->
-        <scene sceneID="Oll-8Z-M65">
-            <objects>
-                <viewController id="7L6-x7-A5b" customClass="AddNewCustomerViewController_AddNewCustomerViewController" customModule="iOSCustomerBillingSystem" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1Wk-Tn-RVk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="a8J-xo-ck3"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Add New Customer" id="k4R-52-ou3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R4d-yX-Wzj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3116" y="144"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="7RW-KE-hTe">
             <objects>
@@ -177,6 +161,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwU-tI-SA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Add New Customer View Controller-->
+        <scene sceneID="ZO0-b8-Dmm">
+            <objects>
+                <viewController storyboardIdentifier="thirdVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aJa-b2-yvJ" customClass="AddNewCustomerViewController" customModule="C0774174_MidTerm_MAD3115W2020_P1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LwL-o3-gNN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FirstName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iZ-Yt-uzD">
+                                <rect key="frame" x="20" y="202" width="130" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name Here" minimumFontSize="17" id="Urr-fa-py2">
+                                <rect key="frame" x="175" y="213" width="208" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6M-ZP-7b4">
+                                <rect key="frame" x="20" y="288" width="130" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gb4-eP-tlU">
+                                <rect key="frame" x="175" y="285" width="208" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCT-eR-SdP">
+                                <rect key="frame" x="20" y="378" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cop-Ii-JKs">
+                                <rect key="frame" x="175" y="378" width="208" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="W61-wi-Oz9"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="3yD-JX-ei1">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="E2R-q2-gHa">
+                            <connections>
+                                <action selector="btnbutton:" destination="aJa-b2-yvJ" id="7Bm-4P-BsQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="Cop-Ii-JKs" id="LsG-jU-x2b"/>
+                        <outlet property="txtFirstName" destination="Urr-fa-py2" id="vZ8-Xd-x0P"/>
+                        <outlet property="txtLastName" destination="gb4-eP-tlU" id="gab-DH-5ZP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NpF-iv-qan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3400.0000000000005" y="130.58035714285714"/>
         </scene>
     </scenes>
 </document>
