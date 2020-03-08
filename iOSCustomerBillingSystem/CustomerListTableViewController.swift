@@ -8,8 +8,12 @@
 
 import UIKit
 
-class CustomerListTableViewController: UITableViewController {
+class CustomerListTableViewController: UITableViewController
+{
 
+    @IBOutlet var tblCustomers: UITableView!
+    lazy var customersName: [Customer] = []
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
