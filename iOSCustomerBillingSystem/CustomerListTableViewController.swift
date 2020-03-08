@@ -17,6 +17,7 @@ class CustomerListTableViewController: UITableViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        loadCountries()
 
         
     }

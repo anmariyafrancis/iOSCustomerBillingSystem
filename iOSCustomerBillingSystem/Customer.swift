@@ -14,18 +14,17 @@ class Customer
     var firstName:String
     var lastName:String
     var email:String
-    var password:String
     var fullName:String
     {
         return "\(firstName) \(lastName)"
     }
     
-    init(customerId:String,firstName:String,lastName:String,email:String,password:String)
+    init(customerId:String,firstName:String,lastName:String,email:String)
     {
         self.customerId=customerId
         self.firstName=firstName
         self.lastName=lastName
         self.email=email
-        self.password=password
+        
     }
 }
