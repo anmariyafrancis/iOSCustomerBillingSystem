@@ -40,9 +40,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W77-Mv-4PQ">
-                                <rect key="frame" x="100" y="524" width="177" height="55"/>
+                                <rect key="frame" x="119" y="522" width="177" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="911.59420289855075" y="138.61607142857142"/>
         </scene>
-        <!--Customer List Table View Controller-->
+        <!--Customers-->
         <scene sceneID="yNH-4h-P9S">
             <objects>
                 <tableViewController id="b6j-e2-tEV" customClass="CustomerListTableViewController" customModule="iOSCustomerBillingSystem" customModuleProvider="target" sceneMemberID="viewController">
@@ -93,7 +93,17 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="s0C-Pa-mjW"/>
+                    <navigationItem key="navigationItem" title="Customers" id="s0C-Pa-mjW">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="7tb-Jz-9d5">
+                            <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="btnLogout:" destination="b6j-e2-tEV" id="saw-sv-N7v"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="New Customer" id="pyL-MV-sDA">
+                            <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tblCustomers" destination="a9b-Hy-JMp" id="0aD-t3-o6E"/>

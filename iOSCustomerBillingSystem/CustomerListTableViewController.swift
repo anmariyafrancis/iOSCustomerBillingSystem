@@ -32,5 +32,5 @@ class CustomerListTableViewController: UITableViewController
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-    
+
 }
