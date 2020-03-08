@@ -16,15 +16,14 @@ class CustomerListTableViewController: UITableViewController
     
     override func viewDidLoad()
     {
+    
         super.viewDidLoad()
-        loadCountries()
-
-        
+        customersName = DataStorage.getInstance().getAllCustomers()
     }
-
+    
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+   override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }

@@ -12,13 +12,28 @@ class ViewController: UIViewController
 {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var swRemember: UISwitch!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func btnLogin(_ sender: UIBarButtonItem)
+    func rememberMeSwitchValue()
+    {
+        let userDefault = UserDefaults.standard
+        
+        if let email = userDefault.string(forKey: "email")
+        {
+            txtEmail.text = email
+            
+            if let password = userDefault.string(forKey: "password")
+            {
+                txtPassword.text = password
+            }
+        }
+    }
+    @IBAction func btnLogin(_ sender: UIButton)
     {
         let email:String=txtEmail.text!
         let password:String=txtPassword.text!
@@ -36,16 +51,13 @@ class ViewController: UIViewController
                                 flag=true
                             }
                         }
-                        if flag==true
+                        if flag==false
                         {
-                           
+                            let alertController = UIAlertController(title: "Error", message:"Invalid email id or password", preferredStyle: .actionSheet)
+                                                           alertController.addAction(UIAlertAction(title: "Login Again", style: .default))
+                                                           self.present(alertController, animated: true, completion: nil)
                         }
-                        else
-                        {
-                                let alertController = UIAlertController(title: "Error", message:"Invalid email id or password", preferredStyle: .actionSheet)
-                                alertController.addAction(UIAlertAction(title: "Login Again", style: .default))
-                                self.present(alertController, animated: true, completion: nil)
-                        }
+                        
                     }
                 }
             }
