@@ -27,10 +27,10 @@ class ViewController: UIViewController
         {
             txtEmail.text = email
             
-            if let password = userDefault.string(forKey: "password")
+            /*if let password = userDefault.string(forKey: "password")
             {
                 txtPassword.text = password
-            }
+            }*/
         }
     }
     @IBAction func btnLogin(_ sender: UIButton)
