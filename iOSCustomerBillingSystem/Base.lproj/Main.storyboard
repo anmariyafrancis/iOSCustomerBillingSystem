@@ -218,6 +218,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uyV-38-0gz">
+                                <rect key="frame" x="0.0" y="667" width="414" height="146"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ujd-OZ-wda">
                                 <rect key="frame" x="230" y="366" width="164" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -228,9 +232,14 @@
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="BLc-W6-6ZI"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TlB-3c-tFo"/>
+                    <navigationItem key="navigationItem" id="TlB-3c-tFo">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="5Lo-pD-c8r">
+                            <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textField_Date" destination="71E-VK-ETb" id="c8l-tH-CrW"/>
+                        <outlet property="textField_billType" destination="Ujd-OZ-wda" id="uL7-qc-Knh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIO-9C-jVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
