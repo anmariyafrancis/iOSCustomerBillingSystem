@@ -142,7 +142,10 @@
                         <viewLayoutGuide key="safeArea" id="OD9-ZF-mAW"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bill Details" id="qe3-KU-YYL">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="GH2-BZ-WaC">
+                        <barButtonItem key="leftBarButtonItem" id="GH2-BZ-WaC">
+                            <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="New Bill" id="Fyr-DF-0vy">
                             <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -150,6 +153,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g4-zv-A5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2361" y="577"/>
+        </scene>
+        <!--Add New Bill View Controller-->
+        <scene sceneID="ImS-Fh-wxu">
+            <objects>
+                <viewController id="x7a-GG-Rol" customClass="AddNewBillViewController" customModule="iOSCustomerBillingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mi0-Hg-2Df">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="BLc-W6-6ZI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIO-9C-jVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3045" y="285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7RW-KE-hTe">
