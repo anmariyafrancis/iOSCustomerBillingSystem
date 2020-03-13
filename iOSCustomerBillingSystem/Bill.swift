@@ -10,16 +10,16 @@ import Foundation
 
 class Bill
 {
-    var billId :  String
+    var billId : Int
     var billDate : String
     var billType: String
-    var totalBill : Double = 0.0
+    var totalBill : String
        
-    init(billId : String,billDate : String,billType:String,totalBill:Double)
+    init(billId : Int,billDate : String,billType:String,totalBill:String)
      {
             self.billId = billId
             self.billDate = billDate
-            self.billType=billType
-            self.totalBill=totalBill
+            self.billType = billType
+            self.totalBill = totalBill
     }
 }

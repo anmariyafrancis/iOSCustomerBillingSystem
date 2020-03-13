@@ -28,7 +28,7 @@ class AddNewBillViewController: UIViewController
     var billId: String!
     var billDate: String!
     var billType: String!
-    var billAmount:Double!
+    var billAmount:String!
     var bill: Bill!
     
     override func viewDidLoad()
@@ -90,15 +90,15 @@ class AddNewBillViewController: UIViewController
     {
         textField_Date.resignFirstResponder()
     }
-    private func saveCustomerButton()
+    private func saveBillButton()
     {
-        let btnSave=UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(AddNewBillViewController.saveCustomer(sender:)))
+        let btnSave=UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(AddNewBillViewController.saveBill(sender:)))
         navigationItem.rightBarButtonItem=btnSave
     }
-    @objc func saveCustomer(sender: UIBarButtonItem)
+    @objc func saveBill(sender: UIBarButtonItem)
     {
          let sb1=UIStoryboard(name: "Main", bundle: nil)
-         let secondVC = sb1.instantiateViewController(identifier: "secondVC") as! ShowBillDetailsViewController
+         let fourthVC = sb1.instantiateViewController(identifier: "fourthVC") as! ShowBillDetailsViewController
          let bId = textField_billId.text
          let bDate = textField_Date.text
          let bType = textField_billType.text

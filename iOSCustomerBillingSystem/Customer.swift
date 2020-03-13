@@ -25,6 +25,5 @@ class Customer
         self.firstName=firstName
         self.lastName=lastName
         self.email=email
-        
     }
 }

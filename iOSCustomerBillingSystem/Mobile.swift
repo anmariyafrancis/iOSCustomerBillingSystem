@@ -18,7 +18,7 @@ class Mobile : Bill
       var internetGBUsed : Int
       var minuteUsed : Int
         
-      init(billId: String, billDate: String, manufacturerName : String, mobilePlan : String, mobileNumber : String, internetGBUsed : Int, minuteUsed : Int)
+      init(billId: Int, billDate: String, billType:String,totalBill:String,manufacturerName : String, mobilePlan : String, mobileNumber : String, internetGBUsed : Int, minuteUsed : Int)
       {
         self.manufacturerName = manufacturerName
         self.mobilePlan = mobilePlan
