@@ -238,6 +238,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="pickerBillType" destination="uyV-38-0gz" id="Sxd-2S-dvT"/>
                         <outlet property="textField_Date" destination="71E-VK-ETb" id="c8l-tH-CrW"/>
                         <outlet property="textField_billType" destination="Ujd-OZ-wda" id="uL7-qc-Knh"/>
                     </connections>

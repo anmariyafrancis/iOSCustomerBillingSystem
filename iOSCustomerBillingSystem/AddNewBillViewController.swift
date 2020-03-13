@@ -12,7 +12,11 @@ class AddNewBillViewController: UIViewController,UITextFieldDelegate
 {
 
     @IBOutlet weak var textField_Date: UITextField!
+    @IBOutlet weak var textField_billType: UITextField!
+    @IBOutlet weak var pickerBillType: UIPickerView!
+    
     var datePicker : UIDatePicker!
+     var billTypeArray = ["Internet", "Hydro", "Mobile"]
     
     override func viewDidLoad()
     {
