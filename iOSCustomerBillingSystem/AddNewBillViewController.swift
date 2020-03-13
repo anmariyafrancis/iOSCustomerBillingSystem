@@ -31,18 +31,6 @@ class AddNewBillViewController: UIViewController
         self.pickerBillType.dataSource = self
         
     }
-    /*override func viewDidAppear(_ animated: Bool) {
-        //Create UIImageView
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        imageView.contentMode = .scaleAspectFit
-        
-        //Assigne Image
-        let image = UIImage(named: "Tiger")
-        imageView.image = image
-        
-        //Assign ImageView to titleView
-        navigationItem.titleView = imageView
-    }*/
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

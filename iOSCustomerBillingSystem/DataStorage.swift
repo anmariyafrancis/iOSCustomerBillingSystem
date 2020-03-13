@@ -53,10 +53,10 @@ class DataStorage
         AddCustomer(customer: c2)
         let c3 = Customer(customerId: 3, firstName: "Aldin", lastName: "Jose", email: "aldin@gmail.com ")
         AddCustomer(customer: c3)
-       //let c4 = Customer(customerId: 1, firstName: "anu", lastName: "anu", email: "aas@gmail.com ")
-     //   AddCustomer(customer: c4)
-      //  let c5 = Customer(customerId: 1, firstName: "anu", lastName: "anu", email: "aas@gmail.com ")
-      //  AddCustomer(customer: c5)
+       let c4 = Customer(customerId: 4, firstName: "Jennifer", lastName: "Jis Jiyo ", email: "jenifer@gmail.com ")
+       AddCustomer(customer: c4)
+      let c5 = Customer(customerId: 5, firstName: "Baby", lastName: "Francis", email: "baby@gmail.com ")
+       AddCustomer(customer: c5)
        
     }
     func AddCustomer(customer: Customer)
