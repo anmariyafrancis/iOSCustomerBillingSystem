@@ -8,31 +8,26 @@
 
 import UIKit
 
-class AddNewCustomerViewController: UIViewController {
+class AddNewCustomerViewController: UIViewController
+{
 
-   let a = DataStorage.getInstance()
+    let a = DataStorage.getInstance()
       
-      
-     @IBOutlet weak var txtFirstName: UITextField!
-      
-      
-      
-     @IBOutlet weak var txtLastName: UITextField!
-      
-      
-     @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtFirstName: UITextField!
+    @IBOutlet weak var txtLastName: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    
      var firstName: String!
      var lastName: String!
      var email: String!
      var cust: Customer!
       
       
-     override func viewDidLoad() {
+     override func viewDidLoad()
+     {
        super.viewDidLoad()
        saveCustomerButton()
        //self.navigationItem.hidesBackButton = true
-       
-       // Do any additional setup after loading the view.
      }
       
       

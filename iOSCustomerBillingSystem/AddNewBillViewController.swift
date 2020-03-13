@@ -15,7 +15,8 @@ enum PickerType:Int
 
 class AddNewBillViewController: UIViewController
 {
-
+    let a = DataStorage.getInstance()
+    
     @IBOutlet weak var textField_billId: UITextField!
     @IBOutlet weak var textField_Date: UITextField!
     @IBOutlet weak var textField_billType: UITextField!
@@ -24,6 +25,10 @@ class AddNewBillViewController: UIViewController
     
     var datePicker : UIDatePicker!
     var billTypeArray = ["Internet", "Hydro", "Mobile"]
+    var billId: Int!
+    var billDate: String!
+    var billType: String!
+    var bill: Bill!
     
     override func viewDidLoad()
     {
@@ -84,7 +89,17 @@ class AddNewBillViewController: UIViewController
     {
         textField_Date.resignFirstResponder()
     }
-
+    
+    @IBAction func saveNewBillButton(_ sender: UIBarButtonItem)
+    {
+        let sb1=UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = sb1.instantiateViewController(identifier: "secondVC") as! ShowBillDetailsViewController
+        let bId = textField_billId.text
+        let bDate = textField_Date.text
+        let bType = textField_billType.text
+        let bAmount = textField_billAmount.text
+    }
+    
 }
 extension AddNewBillViewController:UIPickerViewDelegate
 {
