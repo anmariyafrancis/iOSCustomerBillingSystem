@@ -104,7 +104,6 @@ extension AddNewBillViewController:UIPickerViewDelegate
         //return self.courseArray[row]
         
             return self.billTypeArray[row]
-        
     }
     
     //Fetch the selected values
@@ -123,20 +122,14 @@ extension AddNewBillViewController:UIPickerViewDataSource
     //No of components
     func numberOfComponents(in pickerView: UIPickerView) -> Int
     {
-        return 2
+        return 1
     }
     
     //No. of items in picker view
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int)->Int
     {
-        if component == PickerType.BILLTYPE.rawValue
-        {
+        
             return self.billTypeArray.count
-        }
-        else
-        {
-            return self.billTypeArray.count
-        }
     }
 }
 extension AddNewBillViewController: UITextFieldDelegate

@@ -12,6 +12,10 @@
 		9B105FB4241472A100369F7C /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B105FB3241472A100369F7C /* DataStorage.swift */; };
 		9B105FB82414855600369F7C /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B105FB72414855600369F7C /* CustomerListTableViewController.swift */; };
 		9B5C6FB9241AE511005C7B8C /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C6FB8241AE511005C7B8C /* AddNewBillViewController.swift */; };
+		9B5C6FDB241AFB86005C7B8C /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C6FDA241AFB86005C7B8C /* Bill.swift */; };
+		9B5C6FDD241AFC15005C7B8C /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C6FDC241AFC15005C7B8C /* Internet.swift */; };
+		9B5C6FDF241AFCDD005C7B8C /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C6FDE241AFCDD005C7B8C /* Hydro.swift */; };
+		9B5C6FE1241AFD44005C7B8C /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C6FE0241AFD44005C7B8C /* Mobile.swift */; };
 		9BBD05E92411B419001F06D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD05E82411B419001F06D6 /* AppDelegate.swift */; };
 		9BBD05EB2411B419001F06D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD05EA2411B419001F06D6 /* SceneDelegate.swift */; };
 		9BBD05ED2411B419001F06D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBD05EC2411B419001F06D6 /* ViewController.swift */; };
@@ -28,6 +32,10 @@
 		9B105FB3241472A100369F7C /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		9B105FB72414855600369F7C /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		9B5C6FB8241AE511005C7B8C /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
+		9B5C6FDA241AFB86005C7B8C /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		9B5C6FDC241AFC15005C7B8C /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		9B5C6FDE241AFCDD005C7B8C /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		9B5C6FE0241AFD44005C7B8C /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		9BBD05E52411B419001F06D6 /* iOSCustomerBillingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCustomerBillingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBD05E82411B419001F06D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BBD05EA2411B419001F06D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 				9B105FB3241472A100369F7C /* DataStorage.swift */,
 				9B105FB72414855600369F7C /* CustomerListTableViewController.swift */,
 				9B5C6FB8241AE511005C7B8C /* AddNewBillViewController.swift */,
+				9B5C6FDA241AFB86005C7B8C /* Bill.swift */,
+				9B5C6FDC241AFC15005C7B8C /* Internet.swift */,
+				9B5C6FDE241AFCDD005C7B8C /* Hydro.swift */,
+				9B5C6FE0241AFD44005C7B8C /* Mobile.swift */,
 			);
 			path = iOSCustomerBillingSystem;
 			sourceTree = "<group>";
@@ -164,10 +176,14 @@
 				9BBD05ED2411B419001F06D6 /* ViewController.swift in Sources */,
 				9B105FB4241472A100369F7C /* DataStorage.swift in Sources */,
 				9BBD05E92411B419001F06D6 /* AppDelegate.swift in Sources */,
+				9B5C6FDF241AFCDD005C7B8C /* Hydro.swift in Sources */,
 				9BBD05EB2411B419001F06D6 /* SceneDelegate.swift in Sources */,
+				9B5C6FDD241AFC15005C7B8C /* Internet.swift in Sources */,
 				9B105FB82414855600369F7C /* CustomerListTableViewController.swift in Sources */,
+				9B5C6FDB241AFB86005C7B8C /* Bill.swift in Sources */,
 				9BDEDD1F24131B6500E9BFBA /* ShowBillDetailsViewController.swift in Sources */,
 				9B5C6FB9241AE511005C7B8C /* AddNewBillViewController.swift in Sources */,
+				9B5C6FE1241AFD44005C7B8C /* Mobile.swift in Sources */,
 				9BDEDD2124131CE100E9BFBA /* AddNewCustomerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
