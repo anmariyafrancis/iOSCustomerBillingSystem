@@ -235,6 +235,9 @@
                     <navigationItem key="navigationItem" id="TlB-3c-tFo">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="5Lo-pD-c8r">
                             <color key="tintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveNewBillButton:" destination="x7a-GG-Rol" id="lgL-mM-Zpx"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

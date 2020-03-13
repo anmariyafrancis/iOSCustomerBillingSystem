@@ -25,7 +25,7 @@ class AddNewBillViewController: UIViewController
     
     var datePicker : UIDatePicker!
     var billTypeArray = ["Internet", "Hydro", "Mobile"]
-    var billId: Int!
+    var billId: String!
     var billDate: String!
     var billType: String!
     var bill: Bill!
@@ -98,6 +98,7 @@ class AddNewBillViewController: UIViewController
         let bDate = textField_Date.text
         let bType = textField_billType.text
         let bAmount = textField_billAmount.text
+        a.addNewBill(Bill_Id: bId, Bill_Date: bDate, Bill_Type: bType, Bill_Amount: bAmount)
     }
     
 }
