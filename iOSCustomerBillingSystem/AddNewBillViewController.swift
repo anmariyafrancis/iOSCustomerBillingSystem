@@ -8,7 +8,12 @@
 
 import UIKit
 
-class AddNewBillViewController: UIViewController,UITextFieldDelegate
+enum PickerType:Int
+{
+    case BILLTYPE = 0
+}
+
+class AddNewBillViewController: UIViewController
 {
 
     @IBOutlet weak var textField_Date: UITextField!
@@ -16,13 +21,28 @@ class AddNewBillViewController: UIViewController,UITextFieldDelegate
     @IBOutlet weak var pickerBillType: UIPickerView!
     
     var datePicker : UIDatePicker!
-     var billTypeArray = ["Internet", "Hydro", "Mobile"]
+    var billTypeArray = ["Internet", "Hydro", "Mobile"]
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         textField_Date.delegate = self
+        self.pickerBillType.delegate = self
+        self.pickerBillType.dataSource = self
+        
     }
+    /*override func viewDidAppear(_ animated: Bool) {
+        //Create UIImageView
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        
+        //Assigne Image
+        let image = UIImage(named: "Tiger")
+        imageView.image = image
+        
+        //Assign ImageView to titleView
+        navigationItem.titleView = imageView
+    }*/
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -75,4 +95,62 @@ class AddNewBillViewController: UIViewController,UITextFieldDelegate
         textField_Date.resignFirstResponder()
     }
 
+}
+extension AddNewBillViewController:UIPickerViewDelegate
+{
+    //Set the Value for each row
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
+    {
+        //return self.courseArray[row]
+        
+            return self.billTypeArray[row]
+        
+    }
+    
+    //Fetch the selected values
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+        //self.lblCourseName.text = self.courseArray[row]
+        
+        let strBillType = self.billTypeArray[pickerView.selectedRow(inComponent: PickerType.BILLTYPE.rawValue)]
+        
+        self.textField_billType.text = strBillType
+    }
+}
+extension AddNewBillViewController:UIPickerViewDataSource
+{
+    
+    //No of components
+    func numberOfComponents(in pickerView: UIPickerView) -> Int
+    {
+        return 2
+    }
+    
+    //No. of items in picker view
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int)->Int
+    {
+        if component == PickerType.BILLTYPE.rawValue
+        {
+            return self.billTypeArray.count
+        }
+        else
+        {
+            return self.billTypeArray.count
+        }
+    }
+}
+extension AddNewBillViewController: UITextFieldDelegate
+{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if !textField.text!.isEmpty
+        {
+            if textField.tag == 0
+            {
+                self.billTypeArray.append(textField.text!)
+            }
+            textField.resignFirstResponder()
+            self.pickerBillType.reloadComponent(textField.tag)
+        }
+        return true
+    }
 }
