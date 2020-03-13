@@ -11,7 +11,6 @@ import Foundation
 class Internet : Bill
 {
    
-  var billType : String=""
   var internetProvider : String
   var internetGBUsed : Int
     

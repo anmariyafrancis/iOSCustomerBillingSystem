@@ -11,7 +11,7 @@ import Foundation
 class Mobile : Bill
 {
    
-      var billType : String = ""
+      
       var manufacturerName : String
       var mobilePlan : String
       var mobileNumber : String
@@ -25,6 +25,6 @@ class Mobile : Bill
         self.mobileNumber = mobileNumber
         self.internetGBUsed = internetGBUsed
         self.minuteUsed = minuteUsed
-        super.init(billId: billId, billDate: billDate)
+        super.init(billId: billId, billDate: billDate, billType: billType, totalBill: totalBill)
       }
 }

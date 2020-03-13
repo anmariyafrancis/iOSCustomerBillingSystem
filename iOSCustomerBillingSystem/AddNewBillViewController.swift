@@ -28,6 +28,7 @@ class AddNewBillViewController: UIViewController
     var billId: String!
     var billDate: String!
     var billType: String!
+    var billAmount:Double!
     var bill: Bill!
     
     override func viewDidLoad()
@@ -89,18 +90,24 @@ class AddNewBillViewController: UIViewController
     {
         textField_Date.resignFirstResponder()
     }
-    
-    @IBAction func saveNewBillButton(_ sender: UIBarButtonItem)
+    private func saveCustomerButton()
     {
-        let sb1=UIStoryboard(name: "Main", bundle: nil)
-        let secondVC = sb1.instantiateViewController(identifier: "secondVC") as! ShowBillDetailsViewController
-        let bId = textField_billId.text
-        let bDate = textField_Date.text
-        let bType = textField_billType.text
-        let bAmount = textField_billAmount.text
-        a.addNewBill(Bill_Id: bId, Bill_Date: bDate, Bill_Type: bType, Bill_Amount: bAmount)
+        let btnSave=UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(AddNewBillViewController.saveCustomer(sender:)))
+        navigationItem.rightBarButtonItem=btnSave
     }
-    
+    @objc func saveCustomer(sender: UIBarButtonItem)
+    {
+         let sb1=UIStoryboard(name: "Main", bundle: nil)
+         let secondVC = sb1.instantiateViewController(identifier: "secondVC") as! ShowBillDetailsViewController
+         let bId = textField_billId.text
+         let bDate = textField_Date.text
+         let bType = textField_billType.text
+         let bAmount = textField_billAmount.text
+         a.addNewBill(Bill_Id: bId!, Bill_Date: bDate!, Bill_Type: bType!, Bill_Amount: bAmount!)
+         let alert = UIAlertController(title: "Success", message: "Congrats! Added Successfully", preferredStyle: .alert)
+         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(alert: UIAlertAction!) in self.navigationController?.popViewController(animated: true)}))
+         self.present(alert, animated: true)
+        }
 }
 extension AddNewBillViewController:UIPickerViewDelegate
 {

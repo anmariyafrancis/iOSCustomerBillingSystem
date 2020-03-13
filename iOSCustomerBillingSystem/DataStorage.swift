@@ -30,7 +30,7 @@ class DataStorage
     func addNewBill(Bill_Id : String, Bill_Date : String, Bill_Type : String,Bill_Amount:Double)
     {
       let c = billDictionary.count + 1
-    let temp = Bill(billId: Bill_Id, billDate: Bill_Date, billType: Bill_Type,totalBill:Bill_Amount)
+      let temp = Bill(billId: Bill_Id, billDate: Bill_Date, billType: Bill_Type,totalBill:Bill_Amount)
       //self.AddCustomer(customer: temp)
     }
  
