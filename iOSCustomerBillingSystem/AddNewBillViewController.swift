@@ -16,8 +16,10 @@ enum PickerType:Int
 class AddNewBillViewController: UIViewController
 {
 
+    @IBOutlet weak var textField_billId: UITextField!
     @IBOutlet weak var textField_Date: UITextField!
     @IBOutlet weak var textField_billType: UITextField!
+    @IBOutlet weak var textField_billAmount: UITextField!
     @IBOutlet weak var pickerBillType: UIPickerView!
     
     var datePicker : UIDatePicker!

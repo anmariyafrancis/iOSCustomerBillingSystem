@@ -11,7 +11,7 @@ import UIKit
 class CustomerListTableViewController :UIViewController,UITableViewDelegate,UITableViewDataSource
 {
     @IBOutlet weak var tblCustomer: UITableView!
-    var firstName: String!
+      var firstName: String!
       var lastName: String!
       var email: String!
       var customerCell : [Customer] = []

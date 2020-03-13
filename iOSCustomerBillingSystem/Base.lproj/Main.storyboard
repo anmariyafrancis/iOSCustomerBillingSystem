@@ -240,6 +240,8 @@
                     <connections>
                         <outlet property="pickerBillType" destination="uyV-38-0gz" id="Sxd-2S-dvT"/>
                         <outlet property="textField_Date" destination="71E-VK-ETb" id="c8l-tH-CrW"/>
+                        <outlet property="textField_billAmount" destination="haq-va-RNX" id="WKx-0x-hmM"/>
+                        <outlet property="textField_billId" destination="foN-pU-12h" id="MEy-li-wSh"/>
                         <outlet property="textField_billType" destination="Ujd-OZ-wda" id="uL7-qc-Knh"/>
                     </connections>
                 </viewController>
