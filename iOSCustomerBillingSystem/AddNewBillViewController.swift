@@ -37,6 +37,7 @@ class AddNewBillViewController: UIViewController
         textField_Date.delegate = self
         self.pickerBillType.delegate = self
         self.pickerBillType.dataSource = self
+        saveBillButton()
         
     }
     override func didReceiveMemoryWarning()

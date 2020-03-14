@@ -38,10 +38,9 @@ class ShowBillDetailsViewController: UIViewController,UITableViewDelegate,UITabl
     }
     @objc func add()
     {
-     let sb = UIStoryboard(name: "Main", bundle: nil)
-      let fivthVC = sb.instantiateViewController(identifier: "fivthVC") as! AddNewBillViewController
-      
-       self.navigationController?.pushViewController(fivthVC, animated: true)
+         let sb = UIStoryboard(name: "Main", bundle: nil)
+          let fivthVC = sb.instantiateViewController(identifier: "fivthVC") as! AddNewBillViewController
+          self.navigationController?.pushViewController(fivthVC, animated: true)
     }
      
     private func addLogoutButton()
