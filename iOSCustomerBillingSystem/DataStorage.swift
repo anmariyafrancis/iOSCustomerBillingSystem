@@ -45,12 +45,26 @@ class DataStorage
           }
           return nil
     }
- 
+     func returnBillObject(billId : Int) -> Bill?
+        {
+              for (k,v) in billDictionary
+              {
+                if billId == k
+                {
+                  return v
+                }
+              }
+              return nil
+        }
+     
     func returnCount() -> Int
     {
       return customerDictionary.count
     }
-     
+    func returnCountt()->Int
+    {
+        return billDictionary.count
+    }
     func createCust()
     {
        
@@ -66,6 +80,12 @@ class DataStorage
        AddCustomer(customer: c5)
        
     }
+    func createBill()
+    {
+       
+        let b1=Bill(billId: 1, billDate: "Jan 11,2020", billType: "Internet", totalBill: "150")
+        AddBill(bill: b1)
+    }
     func AddCustomer(customer: Customer)
     {
         customerDictionary.updateValue(customer, forKey: customer.customerId)
@@ -80,6 +100,14 @@ class DataStorage
     func AddBill(bill: Bill)
     {
         billDictionary.updateValue(bill, forKey: bill.billId)
+    }
+    func printBill()
+    {
+      for i in billDictionary.values
+      {
+        print(i.billId)
+        print(i.totalBill)
+      }
     }
   
 }

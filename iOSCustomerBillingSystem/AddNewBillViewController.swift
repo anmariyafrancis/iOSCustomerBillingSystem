@@ -25,7 +25,7 @@ class AddNewBillViewController: UIViewController
     
     var datePicker : UIDatePicker!
     var billTypeArray = ["Internet", "Hydro", "Mobile"]
-    var billId: String!
+    var billId: Int!
     var billDate: String!
     var billType: String!
     var billAmount:String!

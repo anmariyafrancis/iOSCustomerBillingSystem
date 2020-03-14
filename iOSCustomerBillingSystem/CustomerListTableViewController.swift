@@ -19,7 +19,8 @@ class CustomerListTableViewController :UIViewController,UITableViewDelegate,UITa
        
       var tempvar = DataStorage.getInstance()
        
-      override func viewDidLoad() {
+      override func viewDidLoad()
+      {
         super.viewDidLoad()
         let getdata = DataStorage.getInstance()
         getdata.createCust()
